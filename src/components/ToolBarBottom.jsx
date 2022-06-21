@@ -50,7 +50,7 @@ export default class ToolBarCustom extends React.Component {
     const TYPE = checkRole();
 
     if (TYPE === "ADMIN") {
-      return 4;
+      return 3;
     }
     if (TYPE === "STAFF") {
       const arrType = [
@@ -113,7 +113,7 @@ export default class ToolBarCustom extends React.Component {
               icon="las la-chart-bar"
               text="Báo cáo"
               roles={["director"]}
-              href="/report/date/"
+              href="/report/"
             />
             <PrivateNav
               className="page-toolbar-bottom__link js-toolbar-link"
@@ -137,13 +137,6 @@ export default class ToolBarCustom extends React.Component {
           <React.Fragment>
             <PrivateNav
               className="page-toolbar-bottom__link js-toolbar-link"
-              icon="las la-cart-arrow-down"
-              text="Bán hàng"
-              roles={[]}
-              href="/pos/"
-            />
-            <PrivateNav
-              className="page-toolbar-bottom__link js-toolbar-link"
               icon="las la-piggy-bank"
               text="Thống kê"
               roles={[]}
@@ -154,7 +147,7 @@ export default class ToolBarCustom extends React.Component {
               icon="las la-chart-bar"
               text="Báo cáo"
               roles={[]}
-              href="/report/date/"
+              href="/report/"
             />
             <Link
               noLinkClass
